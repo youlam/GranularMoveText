@@ -1,0 +1,49 @@
+[
+    {
+        "keys": ["ctrl+super+up"],
+        "command": "granular_move_text_up",
+    },
+
+    {
+        "keys": ["ctrl+super+down"],
+        "command": "granular_move_text_down",
+    },
+
+    {
+        "keys": ["ctrl+super+left"],
+        "command": "granular_move_text_left",
+        "context": [{ "key": "selection_is_empty_or_reaches_eol_bol", "operator": "equal", "operand": false, "match_all": true}]
+    },
+
+    {
+        "keys": ["ctrl+super+right"],
+        "command": "granular_move_text_right",
+        "context": [{ "key": "selection_is_empty_or_reaches_eol_bol", "operator": "equal", "operand": false, "match_all": true}]
+    },
+
+    {
+        "keys": ["ctrl+super+alt+left"],
+        "command": "granular_move_text_subword_left",
+        "context": [{ "key": "selection_is_empty_or_reaches_eol_bol", "operator": "equal", "operand": false, "match_all": true}]
+    },
+
+    {
+        "keys": ["ctrl+super+alt+right"],
+        "command": "granular_move_text_subword_right",
+        "context": [{ "key": "selection_is_empty_or_reaches_eol_bol", "operator": "equal", "operand": false, "match_all": true}]
+    },
+
+    // grabbing to eol, bol:
+
+    {
+        "keys": ["ctrl+super+i"],
+        "command": "granular_move_text_to_bol",
+        "context": [{ "key": "selection_is_empty_or_reaches_eol_bol", "operator": "equal", "operand": false, "match_all": true}]
+    },
+
+    {
+        "keys": ["ctrl+super+o"],
+        "command": "granular_move_text_to_eol",
+        "context": [{ "key": "selection_is_empty_or_reaches_eol_bol", "operator": "equal", "operand": false, "match_all": true}]
+    },
+]
